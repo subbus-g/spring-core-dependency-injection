@@ -3,12 +3,12 @@ public class Phone
 {
     public static void main(String[] args) 
     {
-        Airtel airtel = new Airtel();
-        airtel.call();
-        airtel.turnOnInternet();
+        Sim sim = new Airtel();
+        sim.call();
+        sim.turnOnInternet();
 
-        Jio jio = new Jio();
-        jio.call();
-        jio.turnOnInternet();
+        sim = new Jio();
+        sim.call();
+        sim.turnOnInternet();
     }
 }
