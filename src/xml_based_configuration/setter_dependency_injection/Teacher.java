@@ -1,13 +1,15 @@
 package setter_dependency_injection;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Teacher
 {
     public static void main(String[] args) 
     {
-        Student ram = new Student();
-        ram.setId(1);
-        ram.setFirstName("ram");
-        ram.setLastName("johnson");
+        ClassPathXmlApplicationContext context;
+        context = new ClassPathXmlApplicationContext("setter_dependency_injection/config.xml");
+        Student ram = context.getBean("student", Student.class);
         System.out.println(ram);
+        context.close();
     }
 }

@@ -6,15 +6,15 @@ public class Student
     String firstName;
     String lastName;
    
-    void setId(int id)
+    public void setId(int id)
     {
         this.id = id;
     }
-    void setFirstName(String firstName)
+    public void setFirstName(String firstName)
     {
         this.firstName = firstName;
     }
-    void setLastName(String lastName)
+    public void setLastName(String lastName)
     {
         this.lastName = lastName;
     }
