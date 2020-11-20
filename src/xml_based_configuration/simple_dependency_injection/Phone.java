@@ -9,7 +9,7 @@ public class Phone
     {
         // load the spring configaration file
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-                "./simple_dependency_injection/config.xml");
+                "simple_dependency_injection/config.xml");
         System.out.println("xml configuration is loaded successfully");
 
         // retrive the bean from spring container

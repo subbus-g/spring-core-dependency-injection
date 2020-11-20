@@ -15,6 +15,6 @@ public class Student
     
     public String toString() 
     {
-        return "id:"+id+"\nfirstName:"+firstName+"\nlastName:"+lastName;
+        return "id:" + id + "\nfirstName:" + firstName + "\nlastName:" + lastName;
     }
 }
